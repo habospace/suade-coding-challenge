@@ -6,7 +6,7 @@ from typing import Dict
 import pandas as pd
 from pydantic import BaseModel
 
-
+# create type synonyms for better readability
 PromotionId = str
 TotalCommissionAmount = Decimal
 
@@ -61,6 +61,7 @@ class DailyOrderSummaryRepository:
         self.product_promotions = product_promotions
         self.products = products
         self.promotions = promotions
+        # join up all the the individual datasets
         self.joined_order_data = self.__join_datasets()
         # acts on self.joined_order_data
         self.__convert_date_like_str_columns_to_date()
@@ -80,7 +81,7 @@ class DailyOrderSummaryRepository:
             columns={
                 "id": "product_id",
                 # renaming description as it's used in other datasets such as 'promotion' and 'product'
-                # appending an extra '_' to make it unique because product_description is duplicated
+                # appending an extra '_' to make it unique because 'product_description' is duplicated
                 # (saved at both 'order_line' and 'product')
                 "description": "product_description_"
             }, inplace=False
@@ -131,7 +132,7 @@ class DailyOrderSummaryRepository:
         except KeyError:
             orders_at_date = self.joined_order_data[self.joined_order_data.date == date]
             if len(orders_at_date) == 0:
-                raise SummaryNotAvailableForDateError(f"No orders at date: {date}")
+                raise SummaryNotAvailableForDateError(f"No orders at date: '{date}'.")
             total_items_sold = len(orders_at_date)
             total_customers = len(orders_at_date.customer_id.unique())
             total_discount_amount = orders_at_date.full_price_amount.sum() - orders_at_date.discounted_amount.sum()
