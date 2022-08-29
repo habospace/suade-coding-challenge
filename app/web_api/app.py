@@ -3,7 +3,7 @@ from flask_smorest import Api
 from pandas import DataFrame
 
 from web_api.views import api_blp
-from data_repositories import DailyOrderSummaryRepository
+from data_repositories.daily_order_summary_repository import DailyOrderSummaryRepository
 
 
 def create_app(
