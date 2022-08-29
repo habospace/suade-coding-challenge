@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "9fc6ef96-123c-4e92-bd4b-d8cdcc4b34c1",
+		"name": "suade_interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9831049"
+	},
+	"item": [
+		{
+			"name": "get daily order summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/order_summary/2019-08-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"order_summary",
+						"2019-08-01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
