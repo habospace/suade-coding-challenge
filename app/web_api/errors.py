@@ -1,0 +1,3 @@
+
+class SubmittedDateIsNotValidError(Exception):
+    pass

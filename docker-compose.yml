@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  app:
+    build: .
+    command: /bin/sh  -c "python main.py"
+    environment:
+      - API_TITLE=orders
+      - API_VERSION=v1
+      - OPENAPI_VERSION=3.0.2
+      - HOST=0.0.0.0
+      - PORT=3001
+      - FLASK_ENV=development
+      - ORDERS_FILE_PATH=/data/orders.csv
+      - ORDERS_LINES_FILE_PATH=/data/order_lines.csv
+      - COMMISSIONS_FILE_PATH=/data/commissions.csv
+      - PRODUCT_PROMOTIONS_FILE_PATH=/data/product_promotions.csv
+      - PRODUCTS=/data/products.csv
+      - PROMOTIONS=/data/promotions.csv
+    volumes:
+      - ./app:/app/
+    ports:
+      - 3001:3001
