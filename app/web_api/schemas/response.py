@@ -7,7 +7,7 @@ from marshmallow import (
 class CommissionsSchema(Schema):
     total = fields.Float(required=True)
     order_average = fields.Float(required=True)
-    promotions = fields.Dict(required=True)
+    promotions = fields.Dict(keys=fields.String(), values=fields.Float(), required=True)
 
 
 class DailyOrderSummarySchema(Schema):
