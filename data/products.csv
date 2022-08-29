@@ -1,0 +1,878 @@
+id,description
+1,Oréos 2X
+2,Škoda 3Tr
+3,Oréos 4X
+4,Škoda 6Tr
+5,Škoda 7Tr
+6,Škoda 8Tr
+7,Škoda 9Tr
+8,Ashok Leyland 12M
+9,Škoda 14Tr
+10,Škoda 15Tr
+11,Škoda 17Tr
+12,Škoda 21Ab
+13,Škoda 21Tr
+14,Škoda 22Tr
+15,MAN 24.3x0
+16,Škoda 24Tr Irisbus
+17,Škoda 25Tr Irisbus
+18,Škoda 26Tr Solaris
+19,Škoda 27Tr Solaris
+20,Škoda 28Tr Solaris
+21,Ikarus 30
+22,Škoda 30Tr SOR
+23,Ikarus 31
+24,Škoda 31Tr SOR
+25,Škoda 32Tr SOR
+26,Škoda 33Tr SOR
+27,Škoda 35Tr
+28,Ikarus 55
+29,Ikarus 60
+30,Ikarus 66
+31,Tatra 86
+32,МАЗ-103
+33,МАЗ-104
+34,МАЗ-105
+35,МАЗ-107
+36,Iveco UA 130
+37,МАЗ-152
+38,Ikarus 180
+39,MAZ-203
+40,МАЗ-205 (автобус)
+41,МАЗ-206
+42,Ikarus 250
+43,МАЗ-251
+44,МАЗ-256
+45,Ikarus 260
+46,Ikarus 280
+47,Crown-Ikarus 286
+48,Fiat 306
+49,Fiat 308
+50,Fiat 309
+51,Ikarus 311
+52,Custom Bus
+53,Fiat 320
+54,Fiat 341 A
+55,Fiat 343
+56,Ikarus 350
+57,Iveco 370
+58,Tatra 400
+59,FAP 403 RHD
+60,Ikarus 405
+61,Ikarus 411
+62,Ikarus 412
+63,Ikarus 415
+64,Ikarus 417
+65,Fiat 418
+66,Duple 425
+67,Alfa Romeo 430A
+68,Ikarus 435
+69,Fiat 470
+70,Ikarus 480
+71,Ikarus 481
+72,Ikarus 489 Polaris
+73,Custom Bus
+74,Custom Bus
+75,Ikarus 556
+76,Fiat 642RN
+77,Fiat 666RN
+78,PAZ-672
+79,Fiat 672
+80,Fiat 680RN
+81,Fiat 682RN
+82,LAZ-695
+83,Škoda 706 RO
+84,Škoda 706 RTO
+85,Škoda 706 RTO-K
+86,Alfa Romeo 900A
+87,Oasa 901
+88,Oasa 901
+89,Alfa Romeo 902A
+90,Oasa 903
+91,Tata 1510/1512
+92,Berkhof 2000NL
+93,RAF-2203
+94,Cobus 2400
+95,Cobus 2700
+96,Cobus 3000
+97,International 3000
+98,International 3300
+99,International 3800
+100,International 3900
+101,Volvo 7700
+102,Volvo 7900
+103,Volvo 8500
+104,Volvo 8700
+105,Volvo 8900
+106,Volvo 9700
+107,Volvo 9900
+108,CDX
+109,MDX
+110,RDX
+111,LX
+112,Stelvio
+113,Humvee C-Series
+114,e-tron
+115,Q2
+116,Q3
+117,Q5
+118,Q7
+119,Q8
+120,Yusheng 007
+121,BJ20
+122,BJ40
+123,BJ40L/Plus
+124,BJ80
+125,BJ90
+126,Bentayga
+127,X1
+128,X2
+129,X3
+130,X4
+131,X5
+132,X6
+133,X7
+134,X5 M
+135,X6 M
+136,BX5
+137,BX7
+138,FRV Cross
+139,V3
+140,V5
+141,Encore
+142,Enclave
+143,Envision
+144,Song
+145,Tang
+146,Yuan
+147,Escalade
+148,Escalade ESV
+149,XT4
+150,XT5
+151,XT6
+152,CX70
+153,CS15
+154,CS35
+155,CS75
+156,CS95
+157,Q25
+158,Q35
+159,Tiggo
+160,Tiggo 3
+161,Tiggo 3X
+162,Tiggo 5 / Grand Tiggo
+163,Tiggo 7
+164,Trax
+165,Niva
+166,Tracker
+167,Captiva
+168,Captiva Sport
+169,Equinox
+170,Blazer
+171,Trailblazer
+172,Traverse
+173,Tahoe
+174,Suburban
+175,C3 Aircross
+176,C3-XR
+177,C4 Aircross
+178,C5 Aircross
+179,Knight XV
+180,Sandero Stepway
+181,Duster
+182,Winstorm
+183,Winstorm MaXX
+184,Terios
+185,Journey
+186,Durango
+187,Fengdu MX6
+188,Fengshen AX3
+189,Fengshen AX5
+190,Fengshen AX7
+191,3 Crossback
+192,DS 7 Crossback
+193,Artemis
+194,Besturn X40
+195,Besturn X80
+196,Junpai D60
+197,500X
+198,Panda 4x4
+199,Freemont
+200,Explorer
+201,Landfort
+202,One
+203,EcoSport
+204,Kuga
+205,Edge
+206,Escape
+207,Everest
+208,Explorer
+209,Flex
+210,Expedition
+211,Expedition EL
+212,Puma
+213,Sauvana
+214,Sport Chassis
+215,GM HydroGen4
+216,Terrain
+217,Acadia
+218,Yukon
+219,Yukon XL
+220,GS1
+221,New Jetstar
+222,Aoosed G5
+223,Haval H3
+224,Haval H5
+225,Haval H6
+226,H6
+227,H6 Coupe
+228,Santa Fe
+229,Boliger
+230,Trax
+231,Captiva
+232,Colorado 7
+233,Equinox
+234,Acadia
+235,BR-V
+236,Vezel
+237,CR-V
+238,Pilot
+239,Ridgeline
+240,Crosstour
+241,XR-V
+242,HR-V
+243,S2
+244,S3
+245,S6
+246,Creta/ix25
+247,Kona
+248,Nexo
+249,Santa Fe
+250,Palisade
+251,Tucson
+252,Venue
+253,EX / QX50
+254,ESQ
+255,FX / QX70
+256,JX / QX60
+257,QX / QX80
+258,MU-X
+259,S5
+260,E-Pace
+261,F-Pace
+262,I-Pace
+263,Renegade
+264,Compass
+265,Wrangler/ Wrangler 2 door
+266,Wrangler Unlimited/Wrangler 4 door
+267,Grand Cherokee
+268,Grand Commander
+269,S30
+270,Borrego/Mohave
+271,KX3
+272,Niro
+273,Seltos
+274,Sorento
+275,Sportage
+276,Telluride
+277,Niva
+278,Xray
+279,Urus
+280,Defender
+281,Range Rover Evoque
+282,Freelander
+283,Discovery Sport
+284,Discovery
+285,Range Rover Sport
+286,Range Rover
+287,X6
+288,X7
+289,GX
+290,LX
+291,NX
+292,RX
+293,UX
+294,X60
+295,X50
+296,MKC
+297,Aviator
+298,Corsair
+299,Nautilus
+300,MKT
+301,Navigator
+302,Navigator L
+303,Thar
+304,Bolero
+305,XUV500
+306,Scorpio
+307,Levante
+308,CX-3
+309,CX-30
+310,CX-4
+311,CX-5
+312,CX-8
+313,CX-9
+314,MX-30
+315,G-Class
+316,GLA-Class
+317,GLB-Class
+318,GLC-Class
+319,GLE-Class
+320,GLE-Class Coupe
+321,GLS-Class
+322,ZS
+323,GS
+324,Countryman
+325,ASX
+326,Eclipse Cross
+327,Outlander
+328,Outlander PHEV
+329,Pajero
+330,X33
+331,Armada
+332,Juke
+333,Murano
+334,Pathfinder
+335,Patrol Y61
+336,Patrol Y62
+337,Qashqai
+338,Rogue
+339,Skyline Crossover
+340,Terrano
+341,Paladin
+342,Xterra
+343,X-Trail
+344,Antara
+345,Crossland X
+346,Mokka X
+347,Nautica
+348,2008
+349,3008
+350,4008
+351,508 RXH
+352,SUV
+353,SUT
+354,Macan
+355,Cayenne
+356,Premier RiO
+357,Pronto
+358,3 City SUV
+359,Captur
+360,Kadjar
+361,Koleos
+362,Sandero Stepway
+363,Triber
+364,QM5
+365,QM3
+366,W5
+367,Cullinan
+368,Dakara
+369,Arona
+370,Ateca
+371,Tarraco
+372,Kodiaq
+373,Yeti
+374,DX7 Bolang
+375,V Cross
+376,Grand Cherokee
+377,Korando
+378,Kyron
+379,Rexton
+380,Tivoli
+381,XLV
+382,Actyon Sports
+383,Shuanghuan SCEO
+384,Ascent
+385,Crosstrek
+386,Exiga Crossover 7
+387,Forester
+388,Outback
+389,SX4
+390,Jimny
+391,Vitara
+392,Tager
+393,Tiggo
+394,Sumo
+395,Sumo Grande
+396,Aria
+397,Nexon
+398,Harrier
+399,Safari
+400,Model X
+401,Model Y
+402,C-HR
+403,RAV4
+404,Land Cruiser Wagon 3-Door
+405,Rush
+406,Land Cruiser Wagon 4-Door
+407,4Runner
+408,Fortuner
+409,Highlander
+410,Harrier
+411,Land Cruiser Prado 5-Door
+412,Land Cruiser
+413,Sequoia
+414,T4
+415,GS3
+416,GS4
+417,GS8
+418,Patriot
+419,Mokka
+420,T70
+421,SA2.0
+422,V8
+423,Atlas
+424,T-Roc
+425,Tiguan
+426,Touareg
+427,XC40
+428,XC60
+429,XC90
+430,1E
+431,2008
+432,Damai X5
+433,SR7
+434,C3 Urban Ark
+435,Landmark
+436,Deskjet
+437,DeskJet (original)
+438,DeskJet Plus
+439,DeskJet Portable
+440,Deskjet 200cci
+441,DeskJet 300j
+442,Deskjet 310 / 310 with Sheetfeeder
+443,Deskjet 320 / 320 with Sheetfeeder
+444,Deskjet 340 / 340cbi / 340 cm / 340cv
+445,Deskjet 350c / 350cbi
+446,Deskjet 400 / 400L
+447,Deskjet 420 / 420c
+448,Deskjet 450cbi / 450vci / 450wbt
+449,Deskjet 460c
+450,Deskjet 460cb
+451,Deskjet 460wf
+452,Deskjet 460wbt
+453,Deskjet 500 / 500c / 500k
+454,Deskjet 505d / 505k
+455,Deskjet 510
+456,Deskjet 520
+457,DeskJet 525q
+458,Deskjet 540
+459,Deskjet 550c
+460,Deskjet 560c / 560j / 560k
+461,Deskjet 600 / 600c / 600k
+462,Deskjet 610c / 610cl
+463,Deskjet 612c
+464,Deskjet 630c
+465,Deskjet 632c
+466,Deskjet 640c / 640u
+467,Deskjet 642c
+468,Deskjet 648c
+469,Deskjet 656c / 656cvr
+470,Deskjet 660c / 660cse / 660k
+471,Deskjet 670c / 670k / 670tv
+472,Deskjet 672c
+473,Deskjet 680c
+474,Deskjet 682c
+475,Deskjet 690c
+476,Deskjet 692c / 692k
+477,Deskjet 693c
+478,Deskjet 694c
+479,Deskjet 695c / 695cci
+480,Deskjet 697c
+481,Deskjet 710c
+482,Deskjet 712c
+483,Deskjet 720c
+484,Deskjet 722c
+485,Deskjet 810c
+486,Deskjet 812c
+487,Deskjet 815c
+488,Deskjet 820cse / 820cxi
+489,Deskjet 825c / 825cvr
+490,Deskjet 830c
+491,Deskjet 832c
+492,Deskjet 840c
+493,Deskjet 841c
+494,Deskjet 842c
+495,Deskjet 843c / 843cxe
+496,Deskjet 845c / 845cv / 845cvr
+497,Deskjet 850c / 850k
+498,Deskjet 855c / 855cse / 855cxi
+499,Deskjet 870cse / 870cxi / 870k
+500,Deskjet 880c
+501,Deskjet 882c
+502,Deskjet 890c / 890cse
+503,Deskjet 895cse / 895cxi
+504,Deskjet 916c
+505,Deskjet 920c / 920cvr / 920cxi
+506,Deskjet 930c / 930 cm
+507,Deskjet 932c
+508,Deskjet 934c
+509,Deskjet 935c
+510,Deskjet 940c / 940cvr / 940cw / 940cxi
+511,Deskjet 948c
+512,Deskjet 950c
+513,Deskjet 952c
+514,Deskjet 955c
+515,Deskjet 957c
+516,Deskjet 959c
+517,Deskjet 960c / 960cse / 960cxi
+518,Deskjet 970cse / 970cxi
+519,Deskjet 980cxi
+520,Deskjet 990 cm / 990cse/ 990cxi
+521,Deskjet 995c / 995ck
+522,Deskjet 1000 / 1000cse / 1000cxi
+523,Deskjet 1100c
+524,Deskjet 1120c / 1120cse / 1120cxi
+525,Deskjet 1125c
+526,Deskjet 1180c
+527,Deskjet 1200c / 1200c/PS
+528,Deskjet 1220c / 1220c/PS / 1220cse / 1220cxi
+529,Deskjet 1280
+530,Deskjet 1600c / 1600 cm / 1600cn
+531,Deskjet 3000 Printer
+532,Deskjet 3050A Printer All-in-One
+533,Deskjet 3320 / 3322 / 3323 3325
+534,Deskjet 3420 / 3425 / 3450
+535,Deskjet 3520 / 3535 / 3550
+536,Deskjet 3620 / 3645 / 3648 / 3650 / 3653
+537,Deskjet 3740 / 3743 / 3744 / 3745 / 3747 / 3748
+538,Deskjet 3810 / 3816 / 3820 / 3822 / 3843 / 3845 / 3847 / 3848
+539,Deskjet 3910 / 3915 / 3918 / 3920 / 3930 / 3938 / 3940
+540,Deskjet 5145 / 5150 / 5155 / 5160
+541,Deskjet 5420v / 5440 / 5442 / 5443
+542,Deskjet 5550 / 5551 / 5552
+543,Deskjet 5650 / 5650w / 5652 / 5655
+544,Deskjet 5740 / 5743 / 5745 / 5748
+545,Deskjet 5850
+546,Deskjet 5940 / 5943
+547,Deskjet 6122 / 6127
+548,Deskjet 6520 / 6540 / 6543 / 6548
+549,Deskjet 6620
+550,Deskjet 6830v /6840 / 6843 / 6848
+551,Deskjet 6940 / 6980
+552,Deskjet 6988
+553,Deskjet 6988dt
+554,Deskjet 9300
+555,Deskjet 9650 / 9670 / 9680
+556,Deskjet 9800 / 9800d
+557,Deskjet D1455
+558,Deskjet D1520
+559,Deskjet D1560
+560,Deskjet D1660
+561,Deskjet D2400
+562,Deskjet D2430
+563,Deskjet D2460
+564,Deskjet D2530
+565,Deskjet D2545
+566,Deskjet D2560
+567,Deskjet D2660
+568,Deskjet D3650
+569,Deskjet D4160
+570,Deskjet D4260
+571,DeskJet F380 All-in-One
+572,DeskJet F4100 series All-in-One
+573,Deskjet All-in-one F4185
+574,DeskJet F4200 series All-in-One
+575,DeskJet F4500 series All-in-One
+576,HP SureSupply
+577,Officejet [2]
+578,Officejet (original)
+579,Officejet 300
+580,Officejet 330
+581,Officejet 350
+582,Officejet 500 series
+583,Officejet 600
+584,Officejet 610
+585,Officejet 630
+586,Officejet 635
+587,Officejet 700
+588,Officejet 710
+589,Officejet 720
+590,Officejet 725
+591,Officejet 600 series
+592,Officejet 700 series
+593,Officejet 4110
+594,Officejet 4215
+595,Officejet 4315
+596,Officejet 4500
+597,Officejet 5110
+598,Officejet 5510
+599,Officejet 5610
+600,Officejet 6110
+601,Officejet 6210
+602,Officejet 6310
+603,Officejet 6600 e-All-in-One Printer series-H711
+604,Officejet 7110
+605,Officejet 7115
+606,Officejet 7130
+607,Officejet 7135
+608,Officejet 7140
+609,Officejet 7210
+610,Officejet 7310
+611,Officejet 7410
+612,Officejet 9110
+613,Officejet 9120
+614,Officejet 9130
+615,Officejet d125xi
+616,Officejet d135 / d135xi
+617,Officejet d145
+618,Officejet d155xi
+619,Officejet g55 / g55xi
+620,Officejet g85 / g85xi
+621,Officejet g95
+622,Officejet J5700 series
+623,Officejet k60 / k60xi
+624,Officejet k80 / k80xi
+625,Officejet L7500 series
+626,Officejet L7600 series
+627,Officejet L7700 series
+628,Officejet r40 / r40xi
+629,Officejet r45
+630,Officejet r60
+631,Officejet r65
+632,Officejet r80 / r80xi
+633,Officejet t45 / t45xi
+634,Officejet t65 / t65xi
+635,Officejet t85
+636,Officejet v30
+637,Officejet v40 / v40xi
+638,Officejet v45
+639,Officejet Pro 1150c / 1150cse
+640,Officejet Pro 1170c / 1170cse / 1170cxi
+641,Officejet Pro 1175c / 1175cse / 1175cxi
+642,Officejet Pro 8500
+643,Officejet Pro 8500 wireless
+644,Officejet Pro 8500 premier
+645,Officejet Pro 8600
+646,Officejet Pro 8600 Plus
+647,Officejet Pro 8600 Premium
+648,PSC
+649,PSC 300
+650,PSC 500 / 500xi
+651,PSC 720
+652,PSC 750 / 750xi
+653,PSC 760
+654,PSC 950 / 950xi
+655,PSC 1110
+656,PSC 1210
+657,PSC 1213
+658,PSC 1215
+659,PSC 1310
+660,PSC 1315
+661,PSC 1350
+662,PSC 1410
+663,PSC 1510
+664,PSC 1610
+665,PSC 2110 / 2110v / 2110xi
+666,PSC 2175
+667,PSC 2210 / 2210v / 2210xi
+668,PSC 2355
+669,PSC 2410 Photosmart
+670,PSC 2510 Photosmart
+671,Photosmart
+672,Photosmart (original)
+673,Photosmart 100
+674,Photosmart 130
+675,Photosmart 145
+676,Photosmart 230
+677,Photosmart 245
+678,Photosmart 325
+679,Photosmart 335
+680,Photosmart 375
+681,Photosmart 385
+682,Photosmart 475
+683,Photosmart 1000 / p1000
+684,Photosmart 1115
+685,Photosmart 1215
+686,Photosmart 1218
+687,Photosmart 1315
+688,Photosmart 2575
+689,Photosmart 2610
+690,Photosmart 2710
+691,Photosmart 3110
+692,Photosmart 3210
+693,Photosmart 3310
+694,Photosmart 5510 e-All-in-One Printer
+695,Photosmart 5514 e-All-in-One Printer
+696,Photosmart 5520 e-All-in-One Printer
+697,Photosmart 6510 e-All-in-One Printer
+698,Photosmart 6520 e-All-in-One Printer
+699,Photosmart 7150
+700,Photosmart 7260 (Introduced August 2007)
+701,Photosmart 7350
+702,Photosmart 7355
+703,Photosmart 7450
+704,Photosmart 7460
+705,Photosmart 7510 e-All-in-One Printer
+706,Photosmart 7520 e-All-in-One Printer
+707,Photosmart 7525 e-All-in-One Printer
+708,Photosmart 7550
+709,Photosmart 7660
+710,Photosmart 7760
+711,Photosmart 7960
+712,Photosmart 8049/8050
+713,Photosmart 8150 (Introduced in 2004)
+714,Photosmart 8450
+715,Photosmart 8750
+716,Photosmart A310
+717,Photosmart A510 series
+718,Photosmart A610 series
+719,Photosmart A710
+720,Photosmart C3180
+721,Photosmart C4180
+722,Photosmart C4280
+723,Photosmart C4380
+724,Photosmart C4480
+725,Photosmart C4580
+726,Photosmart C4680
+727,Photosmart C4780
+728,Photosmart C4795
+729,Photosmart C5180
+730,Photosmart C5280
+731,Photosmart C5380
+732,Photosmart C6180 All-in-One Printer
+733,Photosmart C6280
+734,Photosmart C7180
+735,Photosmart C7280
+736,Photosmart C7288
+737,Photosmart C8180
+738,Photosmart D7560
+739,Photosmart eStation e-All-in-One Printer – C510a
+740,Photosmart p1000
+741,Photosmart p1100 / p1100xi
+742,Photosmart Plus e-All-in-One Printer – B210a
+743,Photosmart Premium e-All-in-One Printer – C310a
+744,Photosmart Premium Fax e-All-in-One Printer – C410a
+745,Photosmart Wireless e-All-in-One Printer – B110a
+746,7210
+747,7220
+748,7230
+749,7250
+750,7270
+751,7280
+752,7290
+753,7510
+754,7520
+755,7730
+756,7750
+757,7780
+758,G-Force
+759,DC01
+760,DC03
+761,DC04
+762,DC07
+763,DC14
+764,DC15
+765,DC17
+766,DC18
+767,DC24
+768,DC25
+769,DC27
+770,DC28
+771,DC33
+772,DC40
+773,DC41
+774,DC42
+775,DC43
+776,DC50
+777,DC51
+778,DC55
+779,IBM 001
+780,IBM 003
+781,IBM 010
+782,IBM 011
+783,IBM 012
+784,IBM 013
+785,IBM 015
+786,IBM 016
+787,IBM 020
+788,IBM 024
+789,IBM 026
+790,IBM 027
+791,IBM 028
+792,IBM 029
+793,IBM 031
+794,IBM 032
+795,IBM 033
+796,IBM 034
+797,IBM 036
+798,IBM 037
+799,IBM 040
+800,IBM 041
+801,IBM 043
+802,IBM 044
+803,IBM 046
+804,IBM 047
+805,IBM 051
+806,IBM 052
+807,IBM 053
+808,IBM 054
+809,IBM 055
+810,IBM 056
+811,IBM 058
+812,IBM 059
+813,DynaTAC 8000 Series
+814,DynaTAC International Series
+815,DynaTAC 6000XL
+816,Ultra Classic
+817,Ultra Classic II
+818,International 1000/2000/2200/2700
+819,MicroTAC
+820,MicroTAC Classic
+821,MicroTAC II
+822,MicroTAC Alpha
+823,MicroTAC Lite
+824,MicroTAC Elite
+825,Bag Phone
+826,StarTAC
+827,Timeport
+828,MR30
+829,MicroTAC International Series
+830,MicroTAC DPC Series
+831,StarTAC 2004
+832,V3620
+833,A008 (Accompli 008)
+834,A388 (Accompli 388)
+835,A388C (Accompli 388)
+836,A760 – Developed and introduced in China
+837,A768
+838,A768i
+839,A853 (MILESTONE)
+840,A855 (DROID)
+841,A953 (MILESTONE 2)
+842,A955 (DROID2)
+843,A910/A910i
+844,A920
+845,A925
+846,A1000
+847,A1010
+848,A1200 (MING)
+849,A1600 (MING2)
+850,A3100 (SURF)
+851,A6288
+852,Kwanon
+853,Canon
+854,Hansa Canon
+855,Canon S
+856,Canon NS
+857,Canon J
+858,Canon J II
+859,Canon S
+860,Canon S II
+861,Canon II B
+862,Canon II C
+863,Canon III
+864,Canon IV
+865,Canon III A
+866,Canon IV S
+867,Canon II A
+868,Canon II D
+869,Canon IV SB
+870,Canon II AF
+871,Canon II F
+872,Canon II AX
+873,Canon II S
+874,Canon IV Sb2
+875,Canon II S2
+876,Canon II D2
+877,Canon II F2

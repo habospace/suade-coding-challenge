@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  app:
+    build: .
+    # tty: true
+    command: /bin/sh -c "python main.py"
+    environment:
+      - API_TITLE=orders
+      - API_VERSION=v1
+      - OPENAPI_VERSION=3.0.2
+      - HOST=0.0.0.0clba
+      - PORT=3001
+      - FLASK_ENV=development
+    volumes:
+      - ./app:/app/
+    ports:
+      - 3001:3001
+
+networks:
+    default:
+        driver: custom-driver-1
