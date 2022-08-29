@@ -11,6 +11,10 @@ PromotionId = str
 TotalCommissionAmount = Decimal
 
 
+class SummaryNotAvailableForDateError(Exception):
+    pass
+
+
 class DailyOrderSummarySchema(BaseModel):
     date: date
     total_items_sold: int
@@ -24,10 +28,10 @@ class DailyOrderSummarySchema(BaseModel):
 
 
 class DailyOrderSummaryRepository:
-    # Normally this class would be wrapper around the database
-    # to aggregate over the relevant tables to pull the data
-    # that make up a daily order summary. Since the data is
-    # in flat files this repository is only going wrap around
+    # Normally this class would be wrapper around the database \
+    # to aggregate over the relevant tables to pull the data \
+    # that make up a daily order summary. Since the data is \
+    # in flat files this repository is only going wrap around \
     # the files.
     # The repository pattern requires us to define 5 methods:
     # - get
@@ -35,12 +39,12 @@ class DailyOrderSummaryRepository:
     # - update
     # - list
     # - delete
-    # It doesn't really make sense to define all 5 methods
-    # for this order summary class since this class is only
-    # for us to be able to read the data, we don't want to
-    # be able to delete/update etc. all the data that make
+    # It doesn't really make sense to define all 5 methods \
+    # for this order summary class since this class is only \
+    # for us to be able to read the data, we don't want to \
+    # be able to delete/update etc. all the data that make \
     # up a daily order summary.
-    # To learn more about the pattern see:
+    # To learn more about repository the pattern see:
     # https://www.cosmicpython.com/book/chapter_02_repository.html
 
     def __init__(
@@ -65,6 +69,7 @@ class DailyOrderSummaryRepository:
         self.joined_order_data["commission_amount"] = self.joined_order_data.apply(
             lambda row: row.total_amount * row.rate, axis=1
         )
+        # this is for caching daily summaries to avoid recalculating again
         self.daily_summary_report_cache = {}
 
     def __join_datasets(self) -> pd.DataFrame:
@@ -121,9 +126,12 @@ class DailyOrderSummaryRepository:
 
     def get(self, date: date) -> DailyOrderSummarySchema:
         try:
+            # try pulling the daily order summary from cache
             return self.daily_summary_report_cache[date]
         except KeyError:
             orders_at_date = self.joined_order_data[self.joined_order_data.date == date]
+            if len(orders_at_date) == 0:
+                raise SummaryNotAvailableForDateError(f"No orders at date: {date}")
             total_items_sold = len(orders_at_date)
             total_customers = len(orders_at_date.customer_id.unique())
             total_discount_amount = orders_at_date.full_price_amount.sum() - orders_at_date.discounted_amount.sum()
@@ -133,6 +141,7 @@ class DailyOrderSummaryRepository:
             average_commissions_per_order = orders_at_date.groupby(
                 ["order_id"]
             ).agg({"commission_amount": "sum"}).reset_index().commission_amount.mean()
+            # aggregate total commissions per promotion for the day
             total_commission_amount_per_promotion = {
                 str(int(row.promotion_id)): row.commission_amount for _, row in orders_at_date.groupby(
                     ["promotion_id"]
@@ -140,6 +149,11 @@ class DailyOrderSummaryRepository:
                     {"commission_amount": "sum"}
                 ).reset_index().iterrows()
             }
+            # backfill the promotions dictionary with promo codes that weren't available on the day
+            total_commission_amount_per_promotion.update(
+                {str(k): Decimal(0)
+                 for k in set([str(i) for i in range(1, 6)]) - set(total_commission_amount_per_promotion.keys())}
+            )
             order_summary = DailyOrderSummarySchema(
                 date=date,
                 total_items_sold=total_items_sold,
@@ -152,25 +166,6 @@ class DailyOrderSummaryRepository:
                 total_commission_amount_per_promotion=total_commission_amount_per_promotion
 
             )
+            # save daily order summary to cache
             self.daily_summary_report_cache[date] = order_summary
             return order_summary
-
-
-if __name__ == "__main__":
-    orders_ = pd.read_csv("../../data/orders.csv")
-    order_lines_ = pd.read_csv("../../data/order_lines.csv")
-    commissions_ = pd.read_csv("../../data/commissions.csv")
-    product_promotions_ = pd.read_csv("../../data/product_promotions.csv")
-    products_ = pd.read_csv("../../data/products.csv")
-    promotions_ = pd.read_csv("../../data/promotions.csv")
-
-    repository = DailyOrderSummaryRepository(
-        orders=orders_,
-        order_lines=order_lines_,
-        commissions=commissions_,
-        product_promotions=product_promotions_,
-        products=products_,
-        promotions=promotions_
-    )
-    x = repository.get(date=date(2019, 8, 1))
-    print(x)
