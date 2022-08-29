@@ -132,12 +132,15 @@ class DailyOrderSummaryRepository:
         except KeyError:
             orders_at_date = self.joined_order_data[self.joined_order_data.date == date]
             if len(orders_at_date) == 0:
+
                 raise SummaryNotAvailableForDateError(f"No orders at date: '{date}'.")
             total_items_sold = len(orders_at_date)
             total_customers = len(orders_at_date.customer_id.unique())
             total_discount_amount = orders_at_date.full_price_amount.sum() - orders_at_date.discounted_amount.sum()
             average_discount_rate = orders_at_date.discount_rate.mean()
-            average_order_total = orders_at_date.total_amount.mean()
+            average_order_total = orders_at_date.groupby(
+                ["order_id"]
+            ).agg({"total_amount": "sum"}).reset_index().total_amount.mean()
             total_commissions = orders_at_date.commission_amount.sum()
             average_commissions_per_order = orders_at_date.groupby(
                 ["order_id"]
